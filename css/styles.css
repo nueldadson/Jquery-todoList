@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
+body {
+	margin: 0;
+	overflow: auto;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	overflow: auto;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.dt {
+	font-size: 4rem;
+	color: white;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 500px) {
+	.dt {
+		font-size: 2rem;
+	}
+}
+
+.bg-img {
+	background-image: url("https://live.staticflickr.com/65535/52269587142_8d3bd51cf6_k.jpg");
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	overflow: auto;
+	background-position: center;
+}
+.after {
+	padding: 70px 0;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	height: 100vh;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.274);
+}
+.content {
+	border-radius: 10px;
+	top: 5.5%;
+	left: 10%;
+	padding: 20px 32px;
+	width: 320px;
+	overflow: auto;
+	background: rgba(150, 150, 255, 0.133);
+	border: 1px solid #fff;
+	backdrop-filter: blur(3px);
+	box-shadow: 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+.txtb {
+	width: 100%;
+	border: none;
+	border-bottom: 4px solid #000;
+	border-top: 2px solid lightgrey;
+	border-radius: 20px;
+	background: none;
+	padding: 10px;
+	color: white;
+	outline: none;
+	font-size: 20px;
+}
+h2 {
+	margin: 40px 0;
+	color: Lightgrey;
+}
+.task {
+	width: 100%;
+	background: rgba(70, 125, 255, 0.6);
+	padding: 20px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 30px;
+	margin: 5px 0;
+	overflow: hidden;
+	text-transform: capitalize;
+}
+.task i {
+	float: right;
+	margin-left: 22px;
+	cursor: pointer;
+}
+.comp .task {
+	background: rgba(0, 0, 100, 0.5);
+	color: #fff;
+}
+#notcompbar {
+	max-height: 220px;
+}
+#compbar {
+	max-height: 200px;
+	margin-top: 10px;
+}
+
+/*Scrollbars/*
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px black;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: whitesmoke;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: lightgrey;
+}
